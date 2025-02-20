@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="prs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د کورسونو مدیریت</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="courses-list">
+            <h2>کورسونه</h2>
+            <div id="coursesContainer"></div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="profile-section">
+                <img src="./mohammadi.JPG" alt="د استاد عکس" class="profile-img" id="teacherPhoto">
+            </div>
+
+            <h1>محمدی کمپیوټر انلاین کورس</h1>
+
+            <div class="registration-form">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">نوم او تخلص:</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">بریښنالیک:</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">کورس انتخاب کړئ:</label>
+                        <select id="course" required>
+                            <option value="computer">Computer Language</option>
+                            <option value="powerpoint">Microsoft PowerPoint</option>
+                            <option value="word">Microsoft Word</option>
+                            <option value="access">Microsoft Access</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">ثبت نام <i class="fas fa-user-plus"></i></button>
+                </form>
+            </div>
+
+            <div class="students-list">
+                <h2>ثبت شوي شاګردان</h2>
+                <div id="studentsContainer"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

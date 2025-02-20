@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #00b894;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nassim Persian', Tahoma;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.courses-list {
+    margin-top: 30px;
+}
+
+.course-item {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.course-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+.course-count {
+    position: absolute;
+    right: 15px;
+    background: var(--secondary-color);
+    padding: 2px 8px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.registration-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    backdrop-filter: blur(10px);
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.student-item {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.student-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
+
+button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #00cec9;
+    transform: scale(1.05);
+}
